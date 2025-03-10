@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- icon -->
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body class="background-img" id="checkout">
+    <!-- header -->
+    <nav class="tranparent-nav p-3 mb-4">
+        <ul class="d-flex justify-content-around align-items-center mb-0">
+            <li><a style="font-weight: normal;" href="home.html">Home</a></li>
+            <li><a style="font-weight: normal;" href="products.html">Products</a></li>
+            <li class="none">
+                <h2 class="mb-0">RoyalScents</h2>
+            </li>
+            <li><a style="font-weight: normal;" href="about.html">About Us</a></li>
+            <li><a style="font-weight: normal;" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container_checkout" id="main-div">
+        <form action="./thanksContact.html" method="get">
+            <div class="checkout-flex-row">
+                <div class="checkout-flex-col width-40">
+                    <div>
+                        <h2>Checkout</h2>
+                    </div>
+                    <div class="checkout-flex-row">
+                        <div class="checkout-flex-col width-40">
+                            <div>
+                                <label for="firstName">
+                                    <h4>First name</h4>
+                                </label>
+                                <br>
+                                <input id="firstName" type="text" name="firstName" required>
+                            </div>
+                            <div>
+                                <label for="gov">
+                                    <h4>Governorate</h4>
+                                </label>
+                                <br>
+                                <input id="gov" list="Governorate" name="Governorate" required>                                 
+                                <datalist id="Governorate">                                     
+                                    <option value="Riyadh">Riyadh</option>                                     
+                                    <option value="Jeddah">Jeddah</option>                                     
+                                    <option value="Makkah">Makkah</option>                                     
+                                    <option value="Madinah">Madinah</option>                                     
+                                    <option value="Dammam">Dammam</option>                                     
+                                    <option value="Qassim">Qassim</option>                                     
+                                    <option value="Abha">Abha</option>                                     
+                                    <option value="Hail">Hail</option>                                     
+                                    <option value="Jazan">Jazan</option>                                     
+                                    <option value="Tabuk">Tabuk</option>                                     
+                                    <option value="Baha">Baha</option>                                     
+                                    <option value="Najran">Najran</option>                                     
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="phoneNumber">
+                                    <h4>Phone number</h4>
+                                </label><br>
+                                <input id="phoneNumber" type="text" name="phoneNumber" required>
+                                <p class="error">invalid phone number</p>
+                                <p class="error">enter number</p>
+                            </div>
+                            <div>
+                                <label for="email">
+                                    <h4>Email address</h4>
+                                </label><br>
+                                <input id="email" type="email" name="email" required>
+                                <p class="error">invalid email</p>
+                            </div>
+                        </div>
+                        <div class="checkout-flex-col width-40">
+                            <div>
+                                <label for="lastName">
+                                    <h4>Last name</h4>
+                                </label><br>
+                                <input id="lastName" type="text" name="lastName" required>
+                            </div>
+                            <div>
+                                <Label for="date">
+                                    <h4>Date</h4>
+                                </Label><br>
+                                <input type="date" name="date" value="">
+                            </div>
+                            <div>
+                                <label for="notes">
+                                    <h4>Order notes</h4>
+                                </label>
+                                <br>
+                                <textarea id="notes" name="notes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="checkout_submit">
+                        <input type="submit" value="Place Order">
+                        <p>Note: Payments are upon delivery</p>
+                    </div>
+                </div>
+
+                <div id="order_details">
+                    <img src="./images/royal-amber.jpg" height="400px">
+                    <div class="text">
+                        <p>Royal Amber</p>
+                        <span>600 ر.س</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="ani mt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 class="text-white">Links</h3>
+                    <ul>
+                        <li><a class="text-white-50" href="home.html">Home</a></li>
+                        <li><a class="text-white-50" href="products.html">Products</a></li>
+                        <li><a class="text-white-50" href="about.html">About Us</a></li>
+                        <li><a class="text-white-50" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="text-white">Follow Us</h3>
+                    <ul>
+                        <li><a class="text-white-50" href="https://www.facebook.com/"><i class="fa-brands fa-facebook me-2"></i> Facebook</a>
+                        </li>
+                        <li><a class="text-white-50" href=""><i class="fa-brands fa-instagram me-2"></i> Instagram</a>
+                        </li>
+                        <li><a class="text-white-50" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest me-2"></i> Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="text-white">Team Members</h3>
+                    <ul>
+                      <li><a class="text-white-50" href="about.html#Mansour">Mansour Mohammed</a></li>
+                        <li><a class="text-white-50" href="about.html#Abdullah">Abdullah Saeed Al-Shahrani</a></li>
+                        <li><a class="text-white-50" href="about.html#Mazen">Mazen Thawab Ayed</a></li>
+                        <li><a class="text-white-50" href="about.html#AbdulAziz">Abdul Aziz Obaid</a></li>
+                        <li><a class="text-white-50" href="about.html#Nayef">Nayef</a></li>
+						<li><a class="text-white-50" href="about.html#Abdu">Abdullah Saad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="JS/checkout/checkout.js"></script>
+    <script src="JS/checkout/form_validation.js"></script>
+</body>
+
+</html>
